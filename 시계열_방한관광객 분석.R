@@ -157,7 +157,7 @@ df_all <- data.frame(
   Segment = c(rep("Actual", n), rep("Forecast", h))
 )
 
-# 🔧 하나의 선으로 그리되 색상만 구간별로 지정
+# 하나의 선으로 그리되 색상만 구간별로 지정
 ggplot(df_all, aes(x = Date, y = Value)) +
   geom_line(color = "grey40", linewidth = 1) +
   geom_line(data = subset(df_all, Segment == "Forecast"),
@@ -346,7 +346,7 @@ df_all <- data.frame(
   Segment = c(rep("Actual", n), rep("Forecast", h))
 )
 
-# 🔧 하나의 선으로 그리되 색상만 구간별로 지정
+# 하나의 선으로 그리되 색상만 구간별로 지정
 ggplot(df_all, aes(x = Date, y = Value)) +
   geom_line(color = "grey40", linewidth = 1) +
   geom_line(data = subset(df_all, Segment == "Forecast"),

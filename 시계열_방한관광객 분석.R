@@ -1,5 +1,5 @@
 getwd()
-setwd("C:/Users/김보성/Documents/time series")
+setwd("C:/Users/심대희/Documents/time series")
 
 library(lmtest)           
 library(TSA)
